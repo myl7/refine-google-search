@@ -66,16 +66,20 @@ itemBox.style.gridTemplateColumns = '1fr 1fr'
 itemBox.style.marginBottom = '44px'
 resRoot.appendChild(itemBox)
 
+// Decrease title font size
+let style = ''
+style += 'h3 { font-size: 16px }'
+
+// Change bottom relative search word display
+style += 'div.eqAnXb { margin-bottom: -20px }'
+style += 'div.s75CSd.OhScic.AB4Wff { font-size: 14px }'
+style += 'a.k8XOCe.R0xfCb.VCOFK.s8bAkb {background-color: inherit;min-height: 0;margin: 0;line-height: 24px;}'
+document.querySelectorAll('div.aXBZVd.zVq10e').forEach(e => e.remove())
+
 // CSS inject helper
 const addStyle = style => {
   const styleElem = document.createElement('style')
-  styleElem.innerText = style
+  styleElem.innerHTML = style
   document.head.appendChild(styleElem)
 }
-
-// Decrease title font size
-addStyle(`
-h3 {
-  font-size: 16px;
-}
-`)
+addStyle(style)
