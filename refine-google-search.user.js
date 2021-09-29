@@ -65,3 +65,17 @@ itemBox.style.display = 'grid'
 itemBox.style.gridTemplateColumns = '1fr 1fr'
 itemBox.style.marginBottom = '44px'
 resRoot.appendChild(itemBox)
+
+// CSS inject helper
+const addStyle = style => {
+  const styleElem = document.createElement('style')
+  styleElem.innerText = style
+  document.head.appendChild(styleElem)
+}
+
+// Decrease title font size
+addStyle(`
+h3 {
+  font-size: 16px;
+}
+`)
