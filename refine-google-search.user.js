@@ -2,7 +2,7 @@
 // @name             myl7 refines Google Search
 // @namespace        https://github.com/myl7/refine-google-search
 // @version          0.1.0
-// @description      Simple script to refine Google Search experience: Remove translate button, two column (with caution to avoid element chaos). Copy the code to arrange by youself if you do not want another user script.
+// @description      Simple script to refine Google Search experience. Copy the code to arrange by youself if you do not want another user script.
 // @copyright        Copyright (c) 2021 myl7
 // @license          MIT
 // @author           myl7
