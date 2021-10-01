@@ -53,14 +53,7 @@ for (let i = 0; i < (hasLast ? items.length - 1 : items.length); i++) {
 }
 
 const itemBox = document.createElement('div')
-items.forEach(e => {
-  if (e.className === 'g') {
-    e.style.width = '540px'
-  } else {
-    e.children[0].style.width = '540px'
-  }
-  itemBox.appendChild(e)
-})
+items.forEach(e => itemBox.appendChild(e))
 itemBox.style.display = 'grid'
 itemBox.style.gridTemplateColumns = '1fr 1fr'
 itemBox.style.marginBottom = '44px'
@@ -68,13 +61,19 @@ resRoot.appendChild(itemBox)
 
 // Decrease title font size
 let style = ''
-style += 'h3 { font-size: 16px }'
+style += 'h3 { font-size: 16px !important }'
 
 // Change bottom relative search word display
 style += 'div.eqAnXb { margin-bottom: -20px }'
 style += 'div.s75CSd.OhScic.AB4Wff { font-size: 14px }'
-style += 'a.k8XOCe.R0xfCb.VCOFK.s8bAkb {background-color: inherit;min-height: 0;margin: 0;line-height: 24px;}'
+style += 'a.k8XOCe.R0xfCb.VCOFK.s8bAkb { background-color: inherit; min-height: 0; margin: 0; line-height: 24px }'
 document.querySelectorAll('div.aXBZVd.zVq10e').forEach(e => e.remove())
+
+// Change "other searches" word display
+style += 'div.iDjcJe.IX9Lgd.wwB5gf { font-size: 14px }'
+
+// Fix result block width
+style += 'div.g:not(.jNVrwc.Y4pkMc) { width: 540px }'
 
 // CSS inject helper
 const addStyle = style => {
