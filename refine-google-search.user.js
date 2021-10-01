@@ -27,7 +27,7 @@ let style = ''
 // Remove "translate this page" button
 document.querySelectorAll('a.fl.iUh30').forEach(e => e.remove())
 
-// Two column display
+// Double column display
 const resRoot = document.querySelector('.v7W49e')
 let items = []
 for (let e of resRoot.children) {
