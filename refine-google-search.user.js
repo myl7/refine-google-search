@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             myl7 refines Google Search
 // @namespace        https://github.com/myl7/refine-google-search
-// @version          0.1.1
+// @version          0.1.2
 // @description      Simple script to refine Google Search experience. Copy the code to arrange by youself if you do not want another user script.
 // @copyright        Copyright (c) 2021 myl7
 // @license          MIT
@@ -66,6 +66,11 @@ document.querySelectorAll('div.aXBZVd.zVq10e').forEach(e => e.remove())
 // Change middle other search style
 style += 'div.iDjcJe.IX9Lgd.wwB5gf { font-size: 14px }'
 style += `div.E9iWlb.KFFQ0c.xKf9F { width: ${colWidth} }`
+
+// Change float search result style
+style += 'div.kno-rdesc { padding: 0.5em }'
+style += 'div.HsZQAe { margin-top: 0 !important }'
+style += 'div.PZPZlf.hb8SAc { margin-top: 13px !important }'
 
 // CSS inject helper
 const addStyle = style => {
