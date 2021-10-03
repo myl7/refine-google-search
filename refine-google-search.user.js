@@ -72,6 +72,8 @@ style += 'div.kno-rdesc { padding: 0.5em }'
 style += 'div.HsZQAe { margin-top: 0 !important }'
 style += 'div.PZPZlf.hb8SAc { margin-top: 13px !important }'
 style += 'div.wDYxhc { padding-left: 0.5em !important; padding-right: 0.5em !important }'
+style += 'div.SPZz6b { padding-top: 0.5em }'
+style += 'div.I6TXqe { padding-bottom: 0.5em !important }'
 
 // CSS inject helper
 const addStyle = style => {
